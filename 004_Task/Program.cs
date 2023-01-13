@@ -6,6 +6,16 @@
 Console.Clear();
 Console.Write("Введите натуральное число (N>1) для построение ряда четных чисел от 1 до N: ");
 int number = Convert.ToInt32(Console.ReadLine());
+
+while(number<=1)
+{
+   Console.Write("Неверное число, попробуйте снова: ");
+   number = Convert.ToInt32(Console.ReadLine());
+}
+
+// --- Вариант 1 ---
+
+/* 
 int i = 2;
 
 if (number % 2 != 0) // Избавление от нечетности, для избавления от лишней запятой после последнего члена ряда.
@@ -25,4 +35,18 @@ while (i < number)
     {
         Console.WriteLine(i);
     }
+} 
+*/
+
+
+
+// --- Вариант 2 ---
+if (number % 2 != 0) // Избавление от нечетности, для избавления от лишней запятой после последнего члена ряда.
+{
+    number = number - 1;
 }
+for (int i = 2; i <= (number - 2); i = i + 2)
+{
+    Console.Write(i + ", ");
+}
+Console.WriteLine(number);
