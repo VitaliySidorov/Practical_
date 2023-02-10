@@ -1,5 +1,5 @@
 # Practical_
-##Introduction to programming languages (seminars). Lesson 1
+## Introduction to programming languages (seminars). Lesson 1
 
 **Task 2:** Write a program that takes two numbers as input and outputs which number is greater and which is less.
 a = 5; b=7 -> max=7
